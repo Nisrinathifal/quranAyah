@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "quranAyah_backend": {
+      "main": "src/quranAyah_backend/main.mo",
+      "type": "motoko"
+    },
+    "quranAyah_frontend": {
+      "dependencies": [
+        "quranAyah_backend"
+      ],
+      "source": [
+        "src/quranAyah_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "quranAyah_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
